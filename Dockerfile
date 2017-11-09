@@ -1,5 +1,5 @@
-FROM ubuntu:16.10
-MAINTAINER Alexander Schenkel <alex@alexi.ch>
+FROM ubuntu:16.04
+MAINTAINER Pierre Brunel <pierrebrunel84@gmail.com>
 
 VOLUME ["/var/www"]
 
@@ -8,10 +8,10 @@ RUN apt-get update && \
     apt-get install -y \
       apache2 \
       php \
+      php-intl \
       php-cli \
       libapache2-mod-php \
       php-apcu \
-      php-apcu-bc \
       php-gd \
       php-json \
       php-ldap \
