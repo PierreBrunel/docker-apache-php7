@@ -24,6 +24,8 @@ RUN apt-get update && \
       php-xsl \
       php-zip \
       php-soap \
+      php-curl \
+      php-mcrypt \
       php-xdebug \
       composer
 

@@ -12,7 +12,7 @@ Usage
 ------
 
 ```
-$ docker run -d -P bylexus/apache-php7
+$ docker run -d -P Wimble84/apache-php7
 ```
 
 With all the options:
@@ -22,7 +22,7 @@ $ docker run -d -p 8080:80 \
     -v /home/user/webroot:/var/www \
     -e PHP_ERROR_REPORTING='E_ALL & ~E_STRICT' \
     -e TIMEZONE='Europe/Paris' \
-    bylexus/apache-php7
+    Wimble84/apache-php7
 ```
 
 * `-v [local path]:/var/www` maps the container's webroot to a local path
@@ -58,6 +58,8 @@ Installed packages
 * php-xsl
 * php-zip
 * php-soap
+* php-curl
+* php-mcrypt
 * php-xdebug
 * composer (php package manager)
 
