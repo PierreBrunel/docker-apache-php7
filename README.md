@@ -18,7 +18,7 @@ $ docker run -d -P Wimble84/apache-php7
 With all the options:
 
 ```bash
-$ docker run -d -p 8080:80 \
+$ docker run -d -p 80:80 \
     -v /home/user/webroot:/var/www \
     -e PHP_ERROR_REPORTING='E_ALL & ~E_STRICT' \
     -e TIMEZONE='Europe/Paris' \
@@ -70,5 +70,5 @@ Default Configurations
 * php.ini:
   * display_errors = On
   * error_reporting = E_ALL (default, overridable per env variable)
-  * date.timezone = Europe/Paris (default, ovveridable per env variable)
+  * date.timezone = Europe/Paris (default, overridable per env variable)
 
